@@ -1,0 +1,39 @@
+<mvc:View
+    controllerName="colortile.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+	xmlns:color="colortile.controls"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+				    <color:color bgColor="#FFA590" header="Allha" subheader="Madina" press="onPress" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout">
+	                <TileContent unit="€" footer="...">
+			<NumericContent
+				withMargin="false"
+				value="45"
+				valueColor=""
+				indicator=""
+				scale=""/>
+			</TileContent>
+					
+					</color:color>
+					
+					</content>
+					<footer>
+				<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button type="Accept" text="Create" press="onCreate"/>
+				
+			</OverflowToolbar>
+		
+				</footer>
+				</Page>
+				
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
